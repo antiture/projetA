@@ -1,0 +1,93 @@
+
+@import "../styles/variable"
+@import "../styles/selection"
+@import "../styles/carte"
+@import "../styles/tabbar"
+@import "../styles/typographie"
+@import "../styles/textfiled"
+@import "../styles/button"
+@import "../styles/SVG"
+@import "../styles/selection"
+@import "../styles/scrollbar"
+
+
+// caret attapter à list
+#suivi_list
+    height: auto !important
+    width: calc( 100% - 60px )
+    
+    .carteleft
+        .suivi_notif
+            .pointe
+                background-color: $bleu-notif
+        .suivi_iconecontain
+            .carteicone
+                fill: $suivi-bleu
+                width: 40px
+                height: 40px
+.dossiercontain
+    display: flex
+    flex-direction: row
+    justify-content: start
+    align-items: center
+    .dossiericone
+        fill: $jaune-dossier
+#suiviencour
+    fill: $orange
+#suivifini
+    fill: $red !important
+    // à suprimer
+    display: none
+
+@media only screen and (min-width: 1150px) 
+    .carte
+        .carteleft
+            display: flex
+            flex-direction: row
+            align-items: center
+            .cartenotif
+                .pointe
+            .carteiconecontain
+                .carteicone
+                .iconenotif
+        .carteinfo
+            justify-content: space-between
+            align-items: center
+            margin: 0
+            .carteinfoleft
+                width: auto
+                display: flex
+                flex-direction: row
+                .carteinfoleft_top
+                    width: 140px
+                    line-height: 20px
+                    margin: 0
+                .carteinfoleft_down
+                    min-width:  140px
+                    line-height: 20px
+                    margin: 0
+                .dossiercontain
+                    width: 200px
+                    .carteinfoleft_down
+                        width: 200px
+                        line-height: 20px
+                        margin: 0
+                    .dossiericone
+                        display: none
+            .carteinforight
+                display: flex
+                flex-direction: row
+                .carteinforight_top
+                    line-height: 20px
+                    margin: 0
+                    width: 140px
+                    text-align: left
+                    @include text-1
+                    
+                .carteinforight-down
+                    width: 140px
+                    line-height: 20px
+                    margin: 0
+
+                
+                

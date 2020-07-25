@@ -1,0 +1,108 @@
+
+@import "../styles/variable"
+@import "../styles/selection"
+@import "../styles/carte"
+@import "../styles/tabbar"
+@import "../styles/typographie"
+@import "../styles/textfiled"
+@import "../styles/button"
+@import "../styles/SVG"
+@import "../styles/selection"
+@import "../styles/scrollbar"
+
+
+.create-custom-time-spent
+    
+    position: absolute
+    top: 40px
+    left: 200px
+    width: calc(100% - 210px)
+    height: 100%
+    background-color: #2020209c
+    z-index: 999
+    display: flex
+    align-items: center
+    justify-content: center
+
+.suiviForm
+    background-color: white
+    width: calc(100%)
+    margin-top: 54px
+    height: calc(100% - 54px)
+
+@media (max-width: 500px)
+    ////cart attaper heade
+    #suivi_headcarte
+        .cartenotif
+            width: 10px
+            .pointe
+                display: none
+        .carteicone
+            fill: $suivi-bleu
+        .carteinfo
+           width: calc( 100% - 90px )
+           color: $colorhead
+    .suivi_contenu
+        height: calc( 100% - 60px )
+        overflow-y: scroll
+    
+    #dossier_cart
+        border-left: solid 5px $jaune-dossier
+        margin-top: 30px
+    #commentaire
+        #inputcommentaire
+            min-height: 60px
+            max-height: 120px
+            overflow-y: scroll
+    #annuler_suivi
+        &:hover
+            background-color: $red-actif
+    .time_montant
+        display: flex
+        flex-direction: row
+        width: 100%
+        .divtextarea
+            height: 20px
+            word-wrap: no-wrap
+        .textfiled
+            width: 50%
+    .separation
+      height: 60px
+
+@media (min-width: 500px)
+    #suivi_headcarte
+        .cartenotif
+            width: 10px
+            .pointe
+                display: none
+        .carteicone
+            fill: $suivi-bleu
+        .carteinfo
+           width: calc( 100% - 90px )
+           color: $colorhead
+    .suivi_contenu
+        height: calc( 100% - 60px )
+        overflow-y: scroll
+    
+    #dossier_cart
+        border-left: solid 5px $jaune-dossier
+        margin-top: 30px
+    #commentaire
+        #inputcommentaire
+            min-height: 60px
+            max-height: 120px
+            overflow-y: scroll
+    #annuler_suivi
+        &:hover
+            background-color: $red-actif
+    .time_montant
+        display: flex
+        flex-direction: row
+        width: 100%
+        .divtextarea
+            height: 20px
+            word-wrap: no-wrap
+        .textfiled
+            width: 50%
+    .separation
+      height: 60px
